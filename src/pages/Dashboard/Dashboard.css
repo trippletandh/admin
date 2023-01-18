@@ -1,0 +1,38 @@
+.dashboard-container {
+  height: 100vh;
+  margin-left: 20px;
+}
+
+.dashboard-topSection {
+  margin-bottom: 20px;
+}
+
+.dashboard-tilte {
+  font-size: 40px;
+}
+
+.dashboard-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-left: 85px;
+}
+
+.dashboard-items {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 208px;
+  height: 134px;
+  text-align: center;
+}
+
+.dashboard-items h4 {
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+.dashboard-items p {
+  font-size: 25px;
+}

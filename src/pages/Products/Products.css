@@ -1,0 +1,17 @@
+.product-container {
+  height: 100vh;
+  margin-left: 20px;
+}
+
+.top-section {
+  font-size: 40px;
+}
+
+.product-section {
+  display: flex;
+  align-items: center;
+}
+
+.product-search {
+  margin-right: 850px;
+}
