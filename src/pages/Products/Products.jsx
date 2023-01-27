@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
+import ProductTable from "./ProductTable";
 
 const Products = () => {
   return (
@@ -40,6 +41,7 @@ const Products = () => {
             </div>
           </div>
           {/* Table */}
+          <ProductTable />
         </div>
       </div>
     </>

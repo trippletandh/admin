@@ -37,18 +37,10 @@ const Sidebar = () => {
       {/* Container */}
       <div className="container">
         {/* Layout */}
-        <div style={{ width: open ? "280px" : "50px" }} className="layout">
+        <div className="layout">
           <div className="top_section">
             {/* Logo */}
-            <img
-              style={{ display: open ? "block" : "none" }}
-              className="logo"
-              src={Logo}
-              alt=""
-            />
-            <div style={{ marginLeft: open ? "20px" : "0px" }} className="bars">
-              <FaBars onClick={toggle} />
-            </div>
+            <img className="logo" src={Logo} alt="" />
           </div>
           {menuItem.map((item, index) => (
             <NavLink
@@ -58,17 +50,12 @@ const Sidebar = () => {
               activeclassname="active"
             >
               <div className="icon">{item.icon}</div>
-              <div
-                style={{ display: open ? "block" : "none" }}
-                className="link_text"
-              >
-                {item.name}
-              </div>
+              <div className="link_text">{item.name}</div>
             </NavLink>
           ))}
           <Link className="logout">
             <FiLogOut />
-            <p style={{ display: open ? "block" : "none" }}> LogOut</p>
+            <p> LogOut</p>
           </Link>
         </div>
       </div>
