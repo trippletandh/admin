@@ -32,7 +32,7 @@ const Products = () => {
                 />
               </Box>
             </div>
-            <div className="btn-add">
+            <div className="btn-add-product">
               <Stack direction="row" spacing={2}>
                 <Button variant="contained" color="success">
                   Add New

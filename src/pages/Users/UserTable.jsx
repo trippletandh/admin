@@ -5,21 +5,46 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
-import EditIcon from "@mui/icons-material/Edit";
+import CircleIcon from "@mui/icons-material/Circle";
 
-function createData(name, category, price, action) {
-  return { name, category, price, action };
+function createData(name, phone, email, action) {
+  return { name, phone, email, action };
 }
 
 const rows = [
-  createData("Frozen yoghurt", "Kit", "$60", <EditIcon />),
-  createData("Ice cream sandwich", "Men", "$150", <EditIcon />),
-  createData("Eclair", "Woman", "$2000", <EditIcon />),
-  createData("Cupcake", "Kit", "$250", <EditIcon />),
-  createData("Gingerbread", "Men", "$120", <EditIcon />),
+  createData(
+    "Frozen yoghurt",
+    "09999999",
+    "nguyenvanA@gmail.com",
+    <CircleIcon color="success" />
+  ),
+  createData(
+    "Ice cream ",
+    "09999999",
+    "nguyenvanA@gmail.com",
+    <CircleIcon color="success" />
+  ),
+  createData(
+    "Eclair",
+    "09999999",
+    "nguyenvanA@gmail.com",
+    <CircleIcon color="success" />
+  ),
+  createData(
+    "Cupcake",
+    "09999999",
+    "nguyenvanA@gmail.com",
+    <CircleIcon color="success" />
+  ),
+  createData(
+    "Gingerbread",
+    "09999999",
+    "nguyenvanA@gmail.com",
+    <CircleIcon color="success" />
+  ),
 ];
 
-const ProductTable = () => {
+const UserTable = () => {
   return (
     <>
       <TableContainer component={Paper}>
@@ -27,8 +52,8 @@ const ProductTable = () => {
           <TableHead>
             <TableRow>
               <TableCell>Name</TableCell>
-              <TableCell align="right">Category</TableCell>
-              <TableCell align="right">Price</TableCell>
+              <TableCell align="right">Phone</TableCell>
+              <TableCell align="right">Email</TableCell>
               <TableCell align="right">Action</TableCell>
             </TableRow>
           </TableHead>
@@ -41,8 +66,8 @@ const ProductTable = () => {
                 <TableCell component="th" scope="row">
                   {row.name}
                 </TableCell>
-                <TableCell align="right">{row.category}</TableCell>
-                <TableCell align="right">{row.price}</TableCell>
+                <TableCell align="right">{row.phone}</TableCell>
+                <TableCell align="right">{row.email}</TableCell>
                 <TableCell align="right">{row.action}</TableCell>
               </TableRow>
             ))}
@@ -53,4 +78,4 @@ const ProductTable = () => {
   );
 };
 
-export default ProductTable;
+export default UserTable;

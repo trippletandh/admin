@@ -1,4 +1,4 @@
-.product-container {
+.user-container {
   height: 100vh;
   margin-left: 20px;
 }
@@ -8,12 +8,16 @@
   margin-bottom: 10px;
 }
 
-.product-section {
+.user-section {
   display: flex;
   align-items: center;
   margin-bottom: 70px;
 }
 
-.product-search {
+.user-search {
   margin-right: 850px;
+}
+
+.btn-add {
+  opacity: 0;
 }
