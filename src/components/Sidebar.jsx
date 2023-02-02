@@ -14,7 +14,7 @@ const menuItem = [
 ];
 
 const Sidbar = ({ children }) => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const toggle = () => setOpen(!open);
   return (
     <>
@@ -65,8 +65,10 @@ const Sidbar = ({ children }) => {
             </div>
           </div>
           {/* Page */}
-          <div className="p-7 text-2xl font-semibold">
-            <main>{children}</main>
+          <div className=" p-5 text-2xl font-semibold">
+            <main className={`${open ? "w-[80%]" : "w-[94%]"} fixed`}>
+              {children}
+            </main>
           </div>
         </div>
       </div>
