@@ -1,19 +1,19 @@
-.product-container {
-  height: 100vh;
-  margin-left: 20px;
-}
+@media only screen and (min-width: 1200px) {
+  .product-container {
+    height: 100vh;
+    margin: 20px;
+    flex: 3;
+  }
 
-.top-section {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
+  .top-section {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
 
-.product-section {
-  display: flex;
-  align-items: center;
-  margin-bottom: 70px;
-}
-
-.product-search {
-  margin-right: 850px;
+  .product-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 70px;
+  }
 }

@@ -42,9 +42,9 @@ const OrderTable = () => {
           <TableHead>
             <TableRow>
               <TableCell>Name</TableCell>
-              <TableCell align="right">Price</TableCell>
-              <TableCell align="right">Payment</TableCell>
-              <TableCell align="right">Status</TableCell>
+              <TableCell align="center">Price</TableCell>
+              <TableCell align="center">Payment</TableCell>
+              <TableCell align="center">Status</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -56,9 +56,9 @@ const OrderTable = () => {
                 <TableCell component="th" scope="row">
                   {row.name}
                 </TableCell>
-                <TableCell align="right">{row.price}</TableCell>
-                <TableCell align="right">{row.payment}</TableCell>
-                <TableCell align="right">{row.status}</TableCell>
+                <TableCell align="center">{row.price}</TableCell>
+                <TableCell align="center">{row.payment}</TableCell>
+                <TableCell align="center">{row.status}</TableCell>
               </TableRow>
             ))}
           </TableBody>
