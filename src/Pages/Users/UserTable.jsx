@@ -1,16 +1,19 @@
 import { MdDeleteOutline } from "react-icons/md";
 import { BsFillCircleFill } from "react-icons/bs";
 
-const UsersCard = ({ name, phone, email }) => {
+const UsersCard = ({ imgUrl, name, userName, email }) => {
   return (
     <>
       <tr>
         <td>
           <div className="flex items-center space-x-3 gap-3">
+            <div className="mask mask-squircle w-12 h-12">
+              <img src={imgUrl} alt="Avatar Tailwind CSS Component" />
+            </div>
             <div className="text-[16px]">{name}</div>
           </div>
         </td>
-        <td className="text-[16px]">{phone}</td>
+        <td className="text-[16px]">{userName}</td>
         <td className="text-[16px]">{email}</td>
         <td>
           <div className="flex items-center justify-center gap-5">
@@ -30,32 +33,42 @@ const UsersCard = ({ name, phone, email }) => {
 const UsersData = [
   {
     id: 1,
+    imgUrl:
+      "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80",
     name: "Name",
-    phone: "09999999",
+    userName: "John Ajc",
     email: "nguyenvanA@gmail.com",
   },
   {
     id: 2,
+    imgUrl:
+      "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80",
     name: "Name",
-    phone: "09999999",
+    userName: "John Ajc",
     email: "nguyenvanA@gmail.com",
   },
   {
     id: 3,
+    imgUrl:
+      "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80",
     name: "Name",
-    phone: "09999999",
+    userName: "John Ajc",
     email: "nguyenvanA@gmail.com",
   },
   {
     id: 4,
+    imgUrl:
+      "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80",
     name: "Name",
-    phone: "09999999",
+    userName: "John Ajc",
     email: "nguyenvanA@gmail.com",
   },
   {
     id: 5,
+    imgUrl:
+      "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80",
     name: "Name",
-    phone: "09999999",
+    userName: "John Ajc",
     email: "nguyenvanA@gmail.com",
   },
 ];
@@ -68,7 +81,7 @@ const UserTable = () => {
           <thead className="text-[#9FA2B4]">
             <tr>
               <th className="text-left font-normal text-lg">Name</th>
-              <th className="font-normal text-lg">Phone</th>
+              <th className="font-normal text-lg">UserName</th>
               <th className="font-normal text-lg ">Email</th>
               <th className="font-normal text-lg">Action</th>
             </tr>
@@ -77,8 +90,9 @@ const UserTable = () => {
             {UsersData.map((item) => (
               <UsersCard
                 key={item.id}
+                imgUrl={item.imgUrl}
                 name={item.name}
-                phone={item.phone}
+                userName={item.userName}
                 email={item.email}
               />
             ))}
