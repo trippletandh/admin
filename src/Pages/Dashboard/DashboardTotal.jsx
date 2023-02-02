@@ -1,8 +1,3 @@
-import Bag from "../../assets/bag.png";
-import Home from "../../assets/home.png";
-import People from "../../assets/people.png";
-import Menu from "../../assets/menu.png";
-
 const DashboardCard = ({ imgUrl, name, total }) => {
   return (
     <div className="rounded-md border-2 w-[30%] p-4 bg-gray-200">

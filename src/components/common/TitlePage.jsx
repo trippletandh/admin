@@ -1,4 +1,4 @@
-import Avatar from "../assets/avatar.png";
+import Avatar from "../../assets/avatar.png";
 
 const TitlePage = ({ title }) => {
   return (
@@ -6,7 +6,7 @@ const TitlePage = ({ title }) => {
       <h1 className="text-3xl">{title}</h1>
       <div className="flex items-center gap-2">
         <p className="text-lg">Jones Ferdinand</p>
-        <p className="border-2 border-black rounded-full">
+        <p className="border-2 border-gray-200 rounded-full p-1 bg-gray-200">
           <img className="w-10" src={Avatar} alt="" />
         </p>
       </div>

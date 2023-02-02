@@ -1,4 +1,4 @@
-import TitlePage from "../../components/TitlePage";
+import TitlePage from "../../components/common/TitlePage";
 import OrderTable from "./OrderTable";
 
 const Orders = () => {

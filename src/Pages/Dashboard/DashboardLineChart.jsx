@@ -1,5 +1,5 @@
 import { useState } from "react";
-import LineChart from "../../components/LineChart";
+import LineChart from "../../components/common/LineChart";
 
 const DataChart = [
   {
@@ -23,13 +23,13 @@ const DataChart = [
   {
     id: 4,
     year: 2019,
-    userGain: 90000,
+    userGain: 87000,
     userLost: 4555,
   },
   {
     id: 5,
     year: 2020,
-    userGain: 4300,
+    userGain: 90000,
     userLost: 234,
   },
 ];

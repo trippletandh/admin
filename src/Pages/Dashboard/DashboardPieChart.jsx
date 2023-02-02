@@ -1,5 +1,5 @@
 import { useState } from "react";
-import PieChart from "../../components/PieChart";
+import PieChart from "../../components/common/PieChart";
 
 const DataChart = [
   {

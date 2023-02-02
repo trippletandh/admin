@@ -3,10 +3,10 @@ import { FaThList, FaShoppingBag, FaUserFriends } from "react-icons/fa";
 import { MdOutlineAddShoppingCart } from "react-icons/md";
 import { FiLogOut } from "react-icons/fi";
 import { FiMenu } from "react-icons/fi";
-import Logo from "../assets/Logo.webp";
+import Logo from "../../assets/Logo.webp";
 import { NavLink } from "react-router-dom";
 
-const menuItem = [
+const menuItems = [
   { path: "/", name: "Dashboard", icon: <FaThList /> },
   { path: "/products", name: "Products", icon: <FaShoppingBag /> },
   { path: "/users", name: "Users", icon: <FaUserFriends /> },
@@ -14,7 +14,7 @@ const menuItem = [
 ];
 
 const Sidbar = ({ children }) => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const toggle = () => setOpen(!open);
   return (
     <>
@@ -38,10 +38,11 @@ const Sidbar = ({ children }) => {
                 className="text-white text-3xl cursor-pointer"
               />
             </div>
-            {menuItem.map((item) => (
+            {menuItems.map((item) => (
               <NavLink
                 to={item.path}
                 key={item}
+                activeclassname="bg-blue-200"
                 className="py-[10px] px-[8px] flex items-center gap-2 transition-all duration-500 hover:bg-blue-200"
               >
                 <p className="text-white text-3xl">{item.icon}</p>

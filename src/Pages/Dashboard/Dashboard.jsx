@@ -1,5 +1,4 @@
-import TitlePage from "../../components/TitlePage";
-import DashboardChart from "./DashboardLineChart";
+import TitlePage from "../../components/common/TitlePage";
 import DashboardTotal from "./DashboardTotal";
 import DashboardPieChart from "./DashboardPieChart";
 import DashboardLineChart from "./DashboardLineChart";
