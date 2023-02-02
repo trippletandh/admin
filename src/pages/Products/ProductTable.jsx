@@ -27,9 +27,9 @@ const ProductTable = () => {
           <TableHead>
             <TableRow>
               <TableCell>Name</TableCell>
-              <TableCell align="right">Category</TableCell>
-              <TableCell align="right">Price</TableCell>
-              <TableCell align="right">Action</TableCell>
+              <TableCell align="center">Category</TableCell>
+              <TableCell align="center">Price</TableCell>
+              <TableCell align="center">Action</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -41,9 +41,9 @@ const ProductTable = () => {
                 <TableCell component="th" scope="row">
                   {row.name}
                 </TableCell>
-                <TableCell align="right">{row.category}</TableCell>
-                <TableCell align="right">{row.price}</TableCell>
-                <TableCell align="right">{row.action}</TableCell>
+                <TableCell align="center">{row.category}</TableCell>
+                <TableCell align="center">{row.price}</TableCell>
+                <TableCell align="center">{row.action}</TableCell>
               </TableRow>
             ))}
           </TableBody>

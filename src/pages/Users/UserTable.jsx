@@ -52,9 +52,9 @@ const UserTable = () => {
           <TableHead>
             <TableRow>
               <TableCell>Name</TableCell>
-              <TableCell align="right">Phone</TableCell>
-              <TableCell align="right">Email</TableCell>
-              <TableCell align="right">Action</TableCell>
+              <TableCell align="center">Phone</TableCell>
+              <TableCell align="center">Email</TableCell>
+              <TableCell align="center">Action</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -66,9 +66,9 @@ const UserTable = () => {
                 <TableCell component="th" scope="row">
                   {row.name}
                 </TableCell>
-                <TableCell align="right">{row.phone}</TableCell>
-                <TableCell align="right">{row.email}</TableCell>
-                <TableCell align="right">{row.action}</TableCell>
+                <TableCell align="center">{row.phone}</TableCell>
+                <TableCell align="center">{row.email}</TableCell>
+                <TableCell align="center">{row.action}</TableCell>
               </TableRow>
             ))}
           </TableBody>
