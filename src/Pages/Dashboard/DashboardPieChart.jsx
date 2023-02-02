@@ -1,5 +1,5 @@
 import { useState } from "react";
-import LineChart from "../../components/LineChart";
+import PieChart from "../../components/PieChart";
 
 const DataChart = [
   {
@@ -34,12 +34,12 @@ const DataChart = [
   },
 ];
 
-const DashboardChart = () => {
+const DashboardPieChart = () => {
   const [userData, setUserData] = useState({
     labels: DataChart.map((data) => data.year),
     datasets: [
       {
-        label: "Users Gained",
+        label: "Total Orders",
         data: DataChart.map((data) => data.userGain),
         backgroundColor: [
           "rgba(75,192,192,1)",
@@ -54,12 +54,10 @@ const DashboardChart = () => {
     ],
   });
   return (
-    <div className="flex justify-center">
-      <div className="h-[500px]">
-        <LineChart chartData={userData} />
-      </div>
+    <div className="w-[300px]">
+      <PieChart chartData={userData} />
     </div>
   );
 };
 
-export default DashboardChart;
+export default DashboardPieChart;
