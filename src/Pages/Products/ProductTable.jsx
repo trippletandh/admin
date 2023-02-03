@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { EditIcon, DeleteIcon } from "../../components/common/icons";
+import { BsPen, BsTrash } from "react-icons/bs";
+
 const ProductTable = ({ products }) => {
   return (
     <>
@@ -29,10 +30,10 @@ const ProductTable = ({ products }) => {
                 <td>
                   <div className="flex items-center justify-center gap-5">
                     <Link to="edit">
-                      <EditIcon className="" />
+                      <BsPen />
                     </Link>
                     <button>
-                      <DeleteIcon />
+                      <BsTrash />
                     </button>
                   </div>
                 </td>

@@ -52,7 +52,7 @@ const ProductEdit = () => {
         </div>
         {/* submit button */}
         <button type="submit" className="btn btn-primary my-5">
-          CREATE PRODUCT
+          SAVE PRODUCT
         </button>
       </div>
     </>
