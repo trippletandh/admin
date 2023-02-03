@@ -42,7 +42,6 @@ const Sidbar = ({ children }) => {
               <NavLink
                 to={item.path}
                 key={item}
-                activeclassname="bg-blue-200"
                 className="py-[10px] px-[8px] flex items-center gap-2 transition-all duration-500 hover:bg-blue-200"
               >
                 <p className="text-white text-3xl">{item.icon}</p>
